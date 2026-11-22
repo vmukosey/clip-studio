@@ -1,0 +1,13 @@
+.env
+.git
+.venv
+.pytest_cache
+.serena
+.test-runtime
+__pycache__
+*.pyc
+clip.db
+graphify-out
+storage
+models/*.onnx
+models/*.onnx.json

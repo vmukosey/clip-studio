@@ -1,0 +1,47 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: clip
+      POSTGRES_USER: clip
+      POSTGRES_PASSWORD: clip
+    volumes: [postgres_data:/var/lib/postgresql/data]
+    healthcheck: {test: [CMD-SHELL, pg_isready -U clip -d clip], interval: 5s, timeout: 5s, retries: 10}
+  redis:
+    image: redis:7-alpine
+    command: redis-server --appendonly yes
+    volumes: [redis_data:/data]
+    healthcheck: {test: [CMD, redis-cli, ping], interval: 5s, timeout: 3s, retries: 10}
+  api:
+    build: .
+    command: uvicorn clip_service.api:app --host 0.0.0.0 --port 8080
+    env_file: .env
+    environment: {DATABASE_URL: postgresql+psycopg://clip:clip@postgres:5432/clip, REDIS_URL: redis://redis:6379/0, CLIP_STORAGE_ROOT: /data/clips, CLIP_OLLAMA_URL: "${CLIP_OLLAMA_DOCKER_URL:-http://host.docker.internal:11434}", CLIP_VOICEOVER_QUEUE: "true"}
+    ports: ["8080:8080"]
+    volumes: ["${CLIP_STORAGE_ROOT:-./storage}:/data/clips"]
+    depends_on: {postgres: {condition: service_healthy}, redis: {condition: service_healthy}}
+  worker:
+    build: .
+    command: celery -A clip_service.tasks.celery_app worker --loglevel=INFO --concurrency=2 -Q clips
+    env_file: .env
+    environment: {DATABASE_URL: postgresql+psycopg://clip:clip@postgres:5432/clip, REDIS_URL: redis://redis:6379/0, CLIP_STORAGE_ROOT: /data/clips, CLIP_OLLAMA_URL: "${CLIP_OLLAMA_DOCKER_URL:-http://host.docker.internal:11434}"}
+    volumes: ["${CLIP_STORAGE_ROOT:-./storage}:/data/clips", "./models:/app/models:ro"]
+    depends_on: {postgres: {condition: service_healthy}, redis: {condition: service_healthy}}
+  scheduler:
+    build: .
+    command: celery -A clip_service.tasks.celery_app beat --loglevel=INFO
+    env_file: .env
+    environment: {DATABASE_URL: postgresql+psycopg://clip:clip@postgres:5432/clip, REDIS_URL: redis://redis:6379/0, CLIP_STORAGE_ROOT: /data/clips}
+    volumes: ["${CLIP_STORAGE_ROOT:-./storage}:/data/clips"]
+    depends_on: {postgres: {condition: service_healthy}, redis: {condition: service_healthy}}
+  mcp:
+    build: .
+    command: uvicorn clip_service.mcp:app --host 0.0.0.0 --port 8090
+    env_file: .env
+    environment: {DATABASE_URL: postgresql+psycopg://clip:clip@postgres:5432/clip, REDIS_URL: redis://redis:6379/0, CLIP_STORAGE_ROOT: /data/clips}
+    ports: ["8090:8090"]
+    volumes: ["${CLIP_STORAGE_ROOT:-./storage}:/data/clips"]
+    depends_on: {postgres: {condition: service_healthy}, redis: {condition: service_healthy}}
+volumes:
+  postgres_data:
+  redis_data:

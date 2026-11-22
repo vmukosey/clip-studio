@@ -1,0 +1,14 @@
+.env
+storage/
+clip.db
+__pycache__/
+.pytest_cache/
+*.pyc
+storage/
+clip.db
+.venv/
+tools/
+graphify-out/
+.test-runtime/
+models/*.onnx
+models/*.onnx.json

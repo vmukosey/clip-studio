@@ -1,0 +1,17 @@
+{
+  "version": "0.0.5",
+  "commit": "67bb8ecbc476b5c65146428abe3ec30325248d1c",
+  "protocol": 1,
+  "assets": [
+    {
+      "file": "cutwright-connector-0.0.5.cjs",
+      "bytes": 707692,
+      "sha256": "e07d64c8a3f1108c99c942bdc2b01ec8e9381d627d9a54641eadb69920fce31a"
+    },
+    {
+      "file": "cutwright-claude-0.0.5.mcpb",
+      "bytes": 179683,
+      "sha256": "3c8ddc2378a549375e5cdb236713e1837bd40081b6d7dbdab05998272b1aed9a"
+    }
+  ]
+}

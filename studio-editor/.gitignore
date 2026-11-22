@@ -1,0 +1,38 @@
+node_modules/
+dist/
+dist-electron/
+release/
+screenshots/
+*.log
+.DS_Store
+
+tsconfig.tsbuildinfo
+.vitest/
+
+# Personal projects, design explorations and private development notes stay local.
+/.local/
+/public/connectors/
+/AGENTS.md
+/.agents/
+/EXTERNAL_AGENTS.md
+/RC_SHORTCUTS.md
+/docs/assets/*.prompt.txt
+/projects/
+/design/
+/ACCEPTANCE.md
+/BROWSER.md
+/PRODUCT_GOALS.md
+/RELEASE_CANDIDATE.md
+.env
+/electron/localeData.ts
+.env.*
+!.env.example
+
+# Converted Movavi projects reference the user's original media by absolute
+# path and ship generated PNG assets; regenerate locally with
+# scripts/convert-movavi.mjs — never commit original media or user paths.
+projects/*.converted.cutwright.json
+projects/*.converted.cutwright.conversion-report.json
+projects/*-assets/
+projects/*.native.cutwright.json
+projects/*.native.cutwright.conversion-report.json
