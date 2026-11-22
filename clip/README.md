@@ -143,7 +143,7 @@ fallback и подходит для CI/smoke-проверки. `/ready` пока
 
 ```powershell
 py -3.12 -m venv .venv
-.\.venv\Scripts\python -m pip install -r requirements.txt
+.\.venv\Scripts\python -m pip install -r requirements-gpu.txt
 # CUDA 12 runtime + cuDNN 9 должны быть доступны процессу faster-whisper.
 .\.venv\Scripts\python scripts\gpu_youtube_smoke.py
 ```

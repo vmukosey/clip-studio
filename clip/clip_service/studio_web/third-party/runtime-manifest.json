@@ -51,15 +51,15 @@
     },
     {
       "name": "@hono/node-server",
-      "version": "2.1.5",
+      "version": "2.1.11",
       "license": "MIT",
       "repository": "git+https://github.com/honojs/node-server.git",
-      "packageJsonSha256": "28b7c255c6c7ae6b994ceae9326211b6c6877c4746adb85b780b759ce1ceba41",
+      "packageJsonSha256": "c48ce379bffa4bdf3f9eb3c9cfd45b7be14e61370045f8a9f9d83207c8fe275e",
       "licenses": [
-        "licenses/hono-node-server-2.1.5/LICENSE"
+        "licenses/hono-node-server-2.1.11/LICENSE"
       ],
-      "packageTarball": "https://registry.npmjs.org/@hono/node-server/-/node-server-2.1.5.tgz",
-      "packageIntegrity": "sha512-MgP/I06GdvsilDspMk/qmRzpk8LOUStP6jFAbSRi40W09DhoyUn+Mj7eyKICPqeYKybOjVFLVIAQzvu1bfIa7Q=="
+      "packageTarball": "https://registry.npmjs.org/@hono/node-server/-/node-server-2.1.11.tgz",
+      "packageIntegrity": "sha512-KzKz9vl4vvr1vgLHamj+g5uonbrj5NwAdO3yzOS6cd2HjALVeOgTgeZOyAzNxejbkfOOPIcvuf/Tg8l1pEFLog=="
     },
     {
       "name": "@mediabunny/aac-encoder",
@@ -75,15 +75,15 @@
     },
     {
       "name": "@modelcontextprotocol/sdk",
-      "version": "1.32.1",
+      "version": "1.32.2",
       "license": "MIT",
       "repository": "git+https://github.com/modelcontextprotocol/typescript-sdk.git",
-      "packageJsonSha256": "0216319ea53177f7ed419d660b2f52ccc7e3327e57f9ee2ef03225ff543aeae4",
+      "packageJsonSha256": "7a8d6f79ee52e2bf7cfe23f2d79f7e3c0ab6a3912a340ec345d6ff014534d59d",
       "licenses": [
-        "licenses/modelcontextprotocol-sdk-1.32.1/LICENSE"
+        "licenses/modelcontextprotocol-sdk-1.32.2/LICENSE"
       ],
-      "packageTarball": "https://registry.npmjs.org/@modelcontextprotocol/sdk/-/sdk-1.32.1.tgz",
-      "packageIntegrity": "sha512-2DdE+SJDtzLEEWzY1ZjY7Q+VcPhcV1KisD3zI4u0XZyktsjHum1mwbMI+JaulUBi2OZk+KJAi2uPXzxichPkdw=="
+      "packageTarball": "https://registry.npmjs.org/@modelcontextprotocol/sdk/-/sdk-1.32.2.tgz",
+      "packageIntegrity": "sha512-SWsVtH/0vULSQStoZ6xxH2K09Li8fXYTMC64ZeogCdpZ3XSi1eCPOByV1OpuJxuI3OcmHhosDWYyii07tpPsLw=="
     },
     {
       "name": "@types/dom-mediacapture-transform",
@@ -195,15 +195,15 @@
     },
     {
       "name": "body-parser",
-      "version": "2.3.0",
+      "version": "2.4.0",
       "license": "MIT",
       "repository": "expressjs/body-parser",
-      "packageJsonSha256": "ae841913f51a2b463ba86e011564784654dad953352dc972baf59f87da4b2d36",
+      "packageJsonSha256": "9410a56eb52cfe53ec48f013c872d4d336bb1cad66ea166bf3d97d2807bf542a",
       "licenses": [
-        "licenses/body-parser-2.3.0/LICENSE"
+        "licenses/body-parser-2.4.0/LICENSE"
       ],
-      "packageTarball": "https://registry.npmjs.org/body-parser/-/body-parser-2.3.0.tgz",
-      "packageIntegrity": "sha512-2cGmJupaNgg+QUwVLAucDuWuoMZ6EX9iHDRswZ5lsNYEmwPaRknMPCLZz07yTzVq/83p4o/wzbDZbBrTvGGTIw=="
+      "packageTarball": "https://registry.npmjs.org/body-parser/-/body-parser-2.4.0.tgz",
+      "packageIntegrity": "sha512-Ifk1KcLrxaGt1occQagQNFNNOqRt1LFuehEnHHzB8Z6cRgIxRU1TBaiIsUiCdA+gy5PL7Y1IX31DNKkRmxtXjQ=="
     },
     {
       "name": "buffer-from",
@@ -603,15 +603,15 @@
     },
     {
       "name": "fast-uri",
-      "version": "3.1.8",
+      "version": "3.1.9",
       "license": "BSD-3-Clause",
       "repository": "git+https://github.com/fastify/fast-uri.git",
-      "packageJsonSha256": "30cad05aad3d3596513706451dbfc7e0422f9c1d00f2903ecc34580327d54bc7",
+      "packageJsonSha256": "06728ad83c4df979c6895d089452622441e34afe9b1c24584e2acac8d94a2876",
       "licenses": [
-        "licenses/fast-uri-3.1.8/LICENSE"
+        "licenses/fast-uri-3.1.9/LICENSE"
       ],
-      "packageTarball": "https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.8.tgz",
-      "packageIntegrity": "sha512-GZMtZUTNRpOVIECoXwLNZS5xUGE+mVNbTB8h/7Rwh2TFWcBQiPzTgyZi05BF9UMZKkLJv8XBRJTlU7zg8+ZfMg=="
+      "packageTarball": "https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.9.tgz",
+      "packageIntegrity": "sha512-hS/0Wt3Ya043oKXs0sIxrMpKQITXhMLIrVAKKXi4gozGC9v7YRWVnXIZzjNPTO02M9BdxLCWqK1yRXgNziVyJQ=="
     },
     {
       "name": "ffmpeg-static",
@@ -735,15 +735,15 @@
     },
     {
       "name": "hono",
-      "version": "4.13.13",
+      "version": "4.13.20",
       "license": "MIT",
       "repository": "git+https://github.com/honojs/hono.git",
-      "packageJsonSha256": "169a02072e32d85aacb089ad14b62b027d975479d811f741771fbd0f559fb5c9",
+      "packageJsonSha256": "75f552ec0224edbca26b330037a03f02c4ae17ea6da8f275d9ea9a4755977002",
       "licenses": [
-        "licenses/hono-4.13.13/LICENSE"
+        "licenses/hono-4.13.20/LICENSE"
       ],
-      "packageTarball": "https://registry.npmjs.org/hono/-/hono-4.13.13.tgz",
-      "packageIntegrity": "sha512-CQ46U0ZkAGmbT/4UxdzzGJpacP2IeKgY4a5/tOI9AABbpOMfK739wfDXmv1usCk+3RkKj1hQy4/fjhiwa2xlrA=="
+      "packageTarball": "https://registry.npmjs.org/hono/-/hono-4.13.20.tgz",
+      "packageIntegrity": "sha512-xo6gecEJQ+CjTtOUUbcLHE8CdRKMeF4qITe+DT+OhFnSUmZR/ZBa9XavAfiGh4HlukmlaHFdaK4dz5tkTYFNmA=="
     },
     {
       "name": "http-errors",
@@ -1679,6 +1679,10 @@
       "bytes": 1172,
       "sha256": "23d466b1b134b415b66fa50c6526b4cf3e7b9258554da88d3abb371721e7ce68"
     },
+    "licenses/body-parser-2.4.0/LICENSE": {
+      "bytes": 1172,
+      "sha256": "23d466b1b134b415b66fa50c6526b4cf3e7b9258554da88d3abb371721e7ce68"
+    },
     "licenses/buffer-from-1.1.2/LICENSE": {
       "bytes": 1078,
       "sha256": "14275f5c8139d02054c5259d52a88ccbba662a86af18c30f071c8d082dc6004c"
@@ -1807,6 +1811,10 @@
       "bytes": 1813,
       "sha256": "b010b0dfdfdb23d7396e03b82cd4621fc9bb8f95d6b0aea70b9c24e12074c786"
     },
+    "licenses/fast-uri-3.1.9/LICENSE": {
+      "bytes": 1813,
+      "sha256": "b010b0dfdfdb23d7396e03b82cd4621fc9bb8f95d6b0aea70b9c24e12074c786"
+    },
     "licenses/ffmpeg-core-0.12.10/FFmpeg-GPLv2.txt": {
       "bytes": 18431,
       "sha256": "189b1af95d661151e054cea10c91b3d754e4de4d3fecfb074c1fb29476f7167b"
@@ -1862,6 +1870,14 @@
     "licenses/hono-4.13.13/LICENSE": {
       "bytes": 1101,
       "sha256": "a6ab98e5c77b9070c443eaff2ff81034a6f8cc05a7524d5098eb0f24defa0115"
+    },
+    "licenses/hono-4.13.20/LICENSE": {
+      "bytes": 1101,
+      "sha256": "a6ab98e5c77b9070c443eaff2ff81034a6f8cc05a7524d5098eb0f24defa0115"
+    },
+    "licenses/hono-node-server-2.1.11/LICENSE": {
+      "bytes": 1101,
+      "sha256": "6895190430d809c4c57a7582ecc2f99acbc2ea39a5dfad20262a41d5b3e91733"
     },
     "licenses/hono-node-server-2.1.5/LICENSE": {
       "bytes": 1101,
@@ -1952,6 +1968,10 @@
       "sha256": "71f83c4c0621102a56d9853812777b85751bce7e9726f686f5b056c1f8a4b0e6"
     },
     "licenses/modelcontextprotocol-sdk-1.32.1/LICENSE": {
+      "bytes": 1071,
+      "sha256": "5e13dbbc1d120fc2a03cecde7c91424ae2d7de11b63d58ded2f4431e261ee50d"
+    },
+    "licenses/modelcontextprotocol-sdk-1.32.2/LICENSE": {
       "bytes": 1071,
       "sha256": "5e13dbbc1d120fc2a03cecde7c91424ae2d7de11b63d58ded2f4431e261ee50d"
     },
@@ -2232,8 +2252,8 @@
       "sha256": "e8f4438d0f47eeee2bde157e6b5f7376ac4cfbb4db92b71e2163457c9e43fa8d"
     },
     "THIRD_PARTY_NOTICES.md": {
-      "bytes": 10675,
-      "sha256": "d20f12103a6429939759c1d110a4ac50056018babb7d1b2cfc018996b5b7e024"
+      "bytes": 10677,
+      "sha256": "05ad11c17c4d6a810efdaac306b5675651761838a8f904602599fb9531747f01"
     }
   }
 }
